@@ -5,22 +5,6 @@ public class Main
 
     public static void main(String[] args)
     {
-        int a = 1;
-
-        switch (a)
-        {
-            case 1:
-                System.out.println(a);
-                break;
-
-            case 2:
-                System.out.println(a);
-            case 3:
-                System.out.println(a);
-            default:
-                System.out.println(a);
-        }
-
         // венгерская нотация - устаревшая, использовать не стоит.
         float fA = 5.9f;
         float fB = 5.0f;
