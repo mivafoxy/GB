@@ -68,7 +68,14 @@ public class Main
                     System.out.println("Вы угадали!");
                     break;
                 }
-
+                else if (userNumber < expectedNumber)
+                {
+                    System.out.println("Загаданное число больше введённого.");
+                }
+                else if (userNumber > expectedNumber)
+                {
+                    System.out.println("Загаданное число меньше введённого.");
+                }
                 System.out.println("Вы не угадали, у Вас осталось попыток: " + i);
             }
 
