@@ -11,7 +11,7 @@ public class Main
         float fC = 3.14f;
         float fD = 4f;
 
-        float expressionResult = getExpression(fA, fB, fC, fD);
+        float expressionResult = calculateExpression(fA, fB, fC, fD);
         System.out.println("Результат вычислений: " + expressionResult);
 
         System.out.println(isBetween10And20(9, 10));
@@ -36,7 +36,7 @@ public class Main
      *  возвращающий результат,
      *  где a, b, c, d – входные параметры этого метода;
      */
-    public static float getExpression(float a, float b, float c, float d)
+    public static float calculateExpression(float a, float b, float c, float d)
     {
         return a * (b + (c / d));
     }
