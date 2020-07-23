@@ -16,6 +16,12 @@ public class Plate
 
     public void decreaseFood(int appetite)
     {
+        if (!hasEnoughFood(appetite))
+        {
+            System.out.println("Hasn't required val of food");
+            return;
+        }
+        
         food = food - appetite;
     }
 
