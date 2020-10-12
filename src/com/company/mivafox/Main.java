@@ -20,10 +20,10 @@ public class Main {
     Используем только маленькие буквы
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
         Game1 player = new Game1();
         player.gameStart();
+        Game2 player2 = new Game2();
+        player2.game2Start();
 
 
     }
