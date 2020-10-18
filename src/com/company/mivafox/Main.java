@@ -2,6 +2,8 @@ package com.company.mivafox;
 
 public class Main
 {
+
+
 /*
 * Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст;
 * Конструктор класса должен заполнять эти поля при создании объекта;
@@ -16,62 +18,19 @@ persArray[4] = new Person(...);
 
 * С помощью цикла вывести информацию только о сотрудниках старше 40 лет;
 */
-    public static void main(String[] args)
-    {
-        // Создать массив из 5 сотрудников
-        Employee[] employees = new Employee[5];
-        employees[0] =
-            new Employee(
-                "Ivanov Ivan Ivanovich",
-                "Programmer",
-                "sampleOne@mail.ru",
-                "+7-999-999-99-99",
-                100000,
-                46);
+    public static void main(String[] args) {
+         Employee[] employee  = new Employee[5];
+        employee[0] = new Employee("Петров Александр Иванович", "Директор", "petrovai@mail.ru", "+79263472378", 82000.20, 45);
+        employee[1] = new Employee("Иванова Оксана Алексеевна", "секретарь", "ivanovaoksi@yandex.com", "+79772465129", 45000, 25);
+        employee[2] = new Employee("Сидоров Олег Николаевич", "водитель",null, "+79993728761", 25000.99, 41);
+        employee[3] = new Employee("Никитин Дмитрий Сергеевич", "Менеджер", "dimanikinin90@gmail.com", "+79161678902", 54000, 57);
+        employee[4] = new Employee("Соколов Иван Олегович", "доставщик", null, "+79992348902", 18000, 18 );
 
-        employees[1] =
-            new Employee(
-                "Tulkin Evgeny Borisovich",
-                "Administrator",
-                "sampleTwo@mail.ru",
-                "+7-999-888-77-66",
-                80000,
-                25);
-
-        employees[2] =
-            new Employee(
-                "Lubotkina Alexandra Viktorovna",
-                "Secretary",
-                "sampleThree@mail.ru",
-                "+7-989-111-22-33",
-                50000,
-                34);
-
-        employees[3] =
-            new Employee(
-                "Bulatova Anastasia Krasotkina",
-                "Programmer",
-                "sampleFour@mail.ru",
-                "+7-999-222-33-44",
-                150000,
-                33);
-
-        employees[4] =
-            new Employee(
-                "Ivanov Evgeniy Evgenievich",
-                "IT-administrator",
-                "sampleFour@mail.ru",
-                "+7-444-222-33-00",
-                130000,
-                44);
-
-        // С помощью цикла вывести информацию только о сотрудниках старше 40 лет;
-        for (int i = 0; i < employees.length; i++)
-        {
-            if (employees[i].getAge() > 40)
-            {
-                employees[i].printInfo();
+        for(int i = 0; i<employee.length; i++) {
+            if(employee[i].getAge() > 40) {
+                employee[i].printInfo();
             }
         }
+
     }
 }
