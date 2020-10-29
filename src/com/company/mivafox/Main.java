@@ -26,8 +26,12 @@ public class Main
 
         printName("Jack");
 
-        int year = 2016;
-        printIfYearIsLeapOrNot(year); // Это можно отрефакторить
+        int year = 2020;
+        printIfYearIsLeapOrNot(4);
+        printIfYearIsLeapOrNot(100);
+        printIfYearIsLeapOrNot(400);
+        printIfYearIsLeapOrNot(800);
+        printIfYearIsLeapOrNot(year);
     }
 
 
@@ -99,7 +103,11 @@ public class Main
      */
     public static void printIfYearIsLeapOrNot(int year)
     {
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+        if (year % 4 == 0 && year % 100 != 0)
+        {
+            System.out.println(year + " год является високосным.");
+        }
+        else if (year % 400 == 0)
         {
             System.out.println(year + " год является високосным.");
         }
