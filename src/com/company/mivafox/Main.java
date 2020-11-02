@@ -14,9 +14,9 @@ public class Main
         float expressionResult = calculateExpression(fA, fB, fC, fD);
         System.out.println("Результат вычислений: " + expressionResult);
 
-        System.out.println(isBetween10And20(9, 10));
-        System.out.println(isBetween10And20(11, 10));
-        System.out.println(isBetween10And20(1, 3));
+        System.out.println(isSumBetween10And20(9, 10));
+        System.out.println(isSumBetween10And20(11, 10));
+        System.out.println(isSumBetween10And20(1, 3));
 
         int number = -10;
         printNegativeOrPositive(number);
@@ -51,7 +51,7 @@ public class Main
      * и проверяющий что их сумма лежит в пределах от 10 до 20(включительно),
      * если да – вернуть true, в противном случае – false;
      */
-    public static boolean isBetween10And20(int a, int b)
+    public static boolean isSumBetween10And20(int a, int b)
     {
         int sum = a + b; // вычисляем единожды выражение
         boolean res = sum > 10 && sum <= 20; // Можно использовать как отдельную переменную, так и сразу это выражение
