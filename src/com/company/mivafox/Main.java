@@ -29,7 +29,7 @@ public class Main
         int[] array = { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 }; // Делаем это вне метода, так как это - входные данные.
 
         System.out.println(Arrays.toString(array));
-        changeArray(array);
+        changeZeroesAndOnes(array);
         System.out.println(Arrays.toString(array)); // Многие нашли удобный способ вывода массива в консоль.
 
         /**
@@ -40,7 +40,7 @@ public class Main
         int[] emptyArray = new int[8]; // Задать пустой массив.
 
         System.out.println(Arrays.toString(emptyArray));
-        fillArray(emptyArray);
+        fillArrayWithProgression(emptyArray);
         System.out.println(Arrays.toString(emptyArray));
 
         /**
@@ -52,7 +52,7 @@ public class Main
         int[] myArray = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 }; // Задали массив.
 
         System.out.println(Arrays.toString(myArray));
-        multiplyIn(myArray);
+        multiplyOnSixIn(myArray);
         System.out.println(Arrays.toString(myArray));
 
         /**
@@ -66,7 +66,7 @@ public class Main
         System.out.println("With zeroes");
         printSquare(square);
 
-        fillDiagonalWithOnes(square);
+        fillDiagonalsWithOnes(square);
         System.out.println("With ones.");
         printSquare(square);
 
@@ -131,7 +131,7 @@ public class Main
     }
 
     // Метод, заменяющий в массиве 1 на 0, а 0 на 1.
-    static void changeArray(int[] inputArray) // Массивы - это ссылочные типы. То есть, по сути,
+    static void changeZeroesAndOnes(int[] inputArray) // Массивы - это ссылочные типы. То есть, по сути,
     {                                         // в метод передаётся адрес, на который указывает входной аргумент.
         // С помощью цикла                    // А значит - любые изменения массива внутри метода в результате окажутся в array из main.
         for (int i = 0; i < inputArray.length; i++)
@@ -145,7 +145,7 @@ public class Main
     }
 
     // Метод, заполняющий массив [0 3 6 9 12 15 18 21]
-    static void fillArray(int[] inputArray)
+    static void fillArrayWithProgression(int[] inputArray)
     {
         // С помощью цикла заполнить его значениями
         for (int i = 0; i < inputArray.length; i++)
@@ -155,7 +155,7 @@ public class Main
     }
 
     // Домножение элементов массива
-    static void multiplyIn(int[] inputArray)
+    static void multiplyOnSixIn(int[] inputArray)
     {
         for (int i = 0; i < inputArray.length; i++) // пройти по нему циклом
         {
@@ -165,7 +165,7 @@ public class Main
     }
 
     // Заполнение диагонали единицами.
-    static void fillDiagonalWithOnes(int[][] square)
+    static void fillDiagonalsWithOnes(int[][] square)
     {
         //с помощью цикла(-ов) заполнить его диагональные элементы единицами;
         for (int i = 0; i < square.length; i++)
