@@ -137,7 +137,7 @@ public class Main
         for (int i = 0; i < inputArray.length; i++)
         {
             // используем условие
-//            inputArray[i] = (inputArray[i] == 1) ? 0 : 1;
+            // inputArray[i] = (inputArray[i] == 1) ? 0 : 1;
 
             // Можно сделать проще.
             inputArray[i] = 1 - inputArray[i];
@@ -185,7 +185,7 @@ public class Main
         int max = inputArray[0];
 
         // простой перебор массива.
-        for (int i = 0; i < inputArray.length; i++)
+        for (int i = 1; i < inputArray.length; i++)
         {
             if (min > inputArray[i])
             {
