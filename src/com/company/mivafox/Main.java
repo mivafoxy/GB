@@ -23,6 +23,14 @@ public class Main
 
     public static void main(String[] args)
     {
+//        Scanner scanner = new Scanner(System.in);
+//        int lol = scanner.nextInt();
+//        scanner.nextLine();
+//        String result = scanner.nextLine();
+//
+//        System.out.println("Число: " + lol);
+//        System.out.println("Строка: " + result);
+
         System.out.println("1 - угадываем номер, 2 - угадываем слово.");
         switch (getNumberFromConsole())
         {
@@ -76,6 +84,7 @@ public class Main
                 {
                     System.out.println("Загаданное число меньше введённого.");
                 }
+
                 System.out.println("Вы не угадали, у Вас осталось попыток: " + i);
             }
 
